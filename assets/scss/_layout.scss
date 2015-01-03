@@ -1,0 +1,49 @@
+body {
+  background-color: darken(#fff, 5%);
+  text-shadow: 0px 1px 1px #fff;
+
+  background: -webkit-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
+  background:    -moz-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
+  background:      -o-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
+  background:     -ms-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
+  background:         radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
+
+  background-image: -webkit-radial-gradient(50% 50%, circle cover, rgb(237, 237, 235), rgb(220, 220, 218) 70%, rgb(188, 188, 186) 100%);
+  background-image:    -moz-radial-gradient(50% 50%, circle cover, rgb(237, 237, 235), rgb(220, 220, 218) 70%, rgb(188, 188, 186) 100%);
+  background-image:      -o-radial-gradient(50% 50%, circle cover, rgb(237, 237, 235), rgb(220, 220, 218) 70%, rgb(188, 188, 186) 100%);
+  background-image:     -ms-radial-gradient(50% 50%, circle cover, rgb(237, 237, 235), rgb(220, 220, 218) 70%, rgb(188, 188, 186) 100%);
+  background-image:         radial-gradient(50% 50%, circle cover, rgb(237, 237, 235), rgb(220, 220, 218) 70%, rgb(188, 188, 186) 100%);
+}
+
+.content {
+  @include outer-container;
+  @include pad;
+
+  padding-top: em(250);
+
+  aside {
+    @include span-columns(2);
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      border-radius: 500px;
+      margin-right: 20px;
+    }
+
+    @include media($mobile) {
+      @include span-columns(8);
+    }
+  }
+
+  main {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(8);
+    }
+  }
+}
