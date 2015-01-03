@@ -4,6 +4,11 @@ body {
 
 h1 {
   margin-top: 0;
+  font-size: em(32);
+}
+
+h2 {
+  font-size: em(22);
 }
 
 a {
@@ -11,6 +16,7 @@ a {
 
   &:hover {
     color: darken($blue, 15%);
+    text-decoration: none;
   }
 }
 
