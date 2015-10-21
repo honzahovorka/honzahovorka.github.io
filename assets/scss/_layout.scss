@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: darken(#fff, 5%);
   text-shadow: 0px 1px 1px #fff;
+  min-height: 100%;
 
   background: -webkit-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
   background:    -moz-radial-gradient(50% 50%, circle cover, #EDEDEB, #DCDCDA 70%, #BCBCBA 100%) fixed;
@@ -36,6 +41,8 @@ body {
 
     @include media($mobile) {
       @include span-columns(8);
+      max-width: 100%;
+      text-align: center;
     }
   }
 
@@ -44,6 +51,12 @@ body {
 
     @include media($mobile) {
       @include span-columns(8);
+      max-width: 100%;
+      text-align: center;
     }
+  }
+
+  @include media($mobile) {
+    padding-top: em(50);
   }
 }

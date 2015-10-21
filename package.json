@@ -27,9 +27,10 @@
     "gulp-sass": "^1.2.4",
     "gulp-util": "^3.0.1",
     "node-bourbon": "^1.2.3",
-    "node-neat": "^1.4.2"
+    "node-neat": "^1.4.2",
+    "node-sass": "^3.3.3"
   },
   "dependencies": {
     "del": "^1.1.1"
-  }
+ }
 }
